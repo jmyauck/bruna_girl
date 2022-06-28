@@ -131,7 +131,7 @@ a:active {
     width: 700px;
     margin-left: 600px;
 }
-/*estilo de carrito*/
+/* estilo de carrito*/
 .sectionCarrito {
     max-width: 100vw;
     width: 40rem;
@@ -185,7 +185,6 @@ a:active {
 .mainSection article {
     width: 100%;
 }
-
 /*media query mobile*/
 @media screen and (max-width: 412px) {
     .sectionCarrito {
@@ -297,7 +296,7 @@ a:active {
     grid-area: login;
     background-color: darkorange;
     background-image: url(../imagenes/coments2.jpg);
-}
+}*/
 .divGaleria {
     display: flex;
     flex-wrap: wrap;
@@ -308,7 +307,7 @@ a:active {
     width: 21.8rem;
     transition: 0.7s;
     margin-top: 3.25rem;
-} */
+}
 /* animaciones */
 .nav-item:hover {
     display: flex;
