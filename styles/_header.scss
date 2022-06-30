@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    background-color: #d5bdaf;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    @media screen and (max-width: 412px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    h1 {
+        width: 60%;
+        font-size: 3.75rem;
+        padding-top: 60px;
+        margin-top: 10px;
+        padding-left: 0px;
+        padding-bottom: 50px;
+        color: #000000;
+        @media screen and (max-width: 412px) {
+            padding: 0%;
+            margin: 0%;
+        }
+    }
+    a:link {
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        
+        align-self: end;
+        margin-bottom: 17px;
+        li {
+            background-color: #d5bdaf;
+            letter-spacing: 3px;
+            transition: 0.7s;
+            &:hover {
+                display: flex;
+                align-items: center;
+                height: 35px;
+                transition: height 0.4s;
+                background-color: #f5ebe0;
+            }
+        }
+    }
+}

@@ -258,10 +258,6 @@ a:active {
     .flexNav {
         flex-direction: row;
     }
-    .footer {
-        display: grid;
-        grid-template-rows: 1fr;
-    }
 }
 /*prueba grilla*/
 /* .grilla {
