@@ -1,0 +1,27 @@
+.btnStyle {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 17px;
+    padding: 10px;
+    border: solid 2px;
+    border-color: $marroncito;
+    font-size: 12px;
+    background-color: $cremitaOscuro;
+    letter-spacing: 3px;
+    transition: 0.7s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    &:hover {
+        background-color: $cremitaClaro;
+        color: #000000;
+        border-color: $marroncito;
+    }
+    &:focus {
+        background-color: $cremitaClaro;
+        color: #000000;
+        border-color: $marroncito;
+        box-shadow: none;
+    }
+}

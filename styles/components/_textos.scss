@@ -1,0 +1,9 @@
+.darlingTitle {
+    @include titulos;
+}
+.parrafoIndex {
+    @include parrafos;
+}
+.estiloFuentes {
+    @include fuentes;
+}

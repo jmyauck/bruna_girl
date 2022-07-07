@@ -1,0 +1,32 @@
+.sectionRedes {
+    background-image: url("../imagenes/contacto.jpg");
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 3px solid #d5bdaf;
+    border-radius: 30px;
+    color: #000000;
+    position: fixed;
+    right: 0;
+    top: 95%;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-top: 5px;
+    transition: 0.5s;
+    &:hover {
+        display: flex;
+        align-items: center;
+        height: 155px;
+        transition: 0.5s;
+        top: 80%;
+        background-size: cover;
+        font-weight: bold;
+        letter-spacing: 7px;
+    }
+    @media screen and (max-width: 412px) {
+        display: none;
+    }
+}

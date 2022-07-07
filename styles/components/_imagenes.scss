@@ -1,0 +1,14 @@
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100vw;
+    img {
+        width: 21.8rem;
+        transition: 0.7s;
+        margin-top: 3.25rem;
+        &:hover {
+            transform: translate(0px, -30px);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+footer {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        @media screen and (max-width: 412px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}

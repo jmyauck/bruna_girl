@@ -172,11 +172,11 @@ a:active {
     letter-spacing: 3px;
     transition: 0.7s;
 }
-.grid {
+/* .grid {
     display: grid;
     grid-template-rows: 300px auto 120px;
     max-width: 100%;
-}
+} */
 .mainSection {
     display: flex;
     justify-content: center;

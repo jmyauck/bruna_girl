@@ -1,0 +1,19 @@
+@mixin titulos {
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-left: 43%;
+}
+@mixin fuentes {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+@mixin parrafos {
+    text-align:center;
+    font-family: 'Cormorant Garamond', serif;
+    background-size: contain;
+    font-size: 20px;
+    width: 700px;
+    margin-left: 600px;
+}

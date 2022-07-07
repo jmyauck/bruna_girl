@@ -1,90 +1,12 @@
-* { margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: #f5ebe0;
-    max-width: 100%;
-    h2 {
-        font-family: 'Cormorant Garamond', serif;
-    }
-    div {
-        display: grid;
-        grid-template-rows: 300px auto 120px;
-        max-width: 100%;
-        @media screen and (max-width: 412px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-    }
-}
-section div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 100vw;
-    img {
-        width: 21.8rem;
-        transition: 0.7s;
-        margin-top: 3.25rem;
-        &:hover {
-            transform: translate(0px, -30px);
-        }
-    }
-}
-.sectionRedes {
-    background-image: url("../imagenes/contacto.jpg");
-    background-size: auto;
-    display: flex;
-    align-items: center;
-    height: 20px;
-    border: 3px solid #d5bdaf;
-    border-radius: 30px;
-    color: #000000;
-    position: fixed;
-    right: 0;
-    top: 95%;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    padding-top: 5px;
-    transition: 0.5s;
-    &:hover {
-        display: flex;
-        align-items: center;
-        height: 155px;
-        transition: 0.5s;
-        top: 80%;
-        background-size: cover;
-        font-weight: bold;
-        letter-spacing: 7px;
-    }
-    @media screen and (max-width: 412px) {
-        display: none;
-    }
-}
-footer {
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    ul {
-        display: flex;
-        list-style-type: none;
-        flex-direction: row;
-        justify-content: space-evenly;
-        @media screen and (max-width: 412px) {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-}
-.mainSection {
-    display: flex;
-    justify-content: center;
-    article {
-        width: 100%;
-    }
-}
-@import "./header.scss";
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./base/maquetados";
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./components/btnstyle";
+@import "./components/imagenes";
+@import "./components/links";
+@import "./components/redesfixed";
+@import "./components/textos";
