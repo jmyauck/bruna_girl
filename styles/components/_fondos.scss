@@ -1,0 +1,33 @@
+.fondoNosotros {
+    background-image: url("../imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 830px;
+    background-position-y: 80%;
+}
+//area de comentarios//
+#commentFont {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.comentsBg {
+    background-image: url("../imagenes/coments2.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-y: 75%
+}
+.textArea {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #d5bdaf;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+.textArea:focus {
+    background-color: #f5ebe0;
+    box-shadow: none;
+    border-color: #d6ccc2;
+
+}

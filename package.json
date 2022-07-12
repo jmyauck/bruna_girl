@@ -1,0 +1,33 @@
+{
+  "name": "vsc",
+  "version": "1.0.0",
+  "description": "bruna girl es una pagina de venta de ropa y motivacion personal",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmyauck/bruna_girl.git"
+  },
+  "keywords": [
+    "moda",
+    "outfit",
+    "motivacion",
+    "estilo",
+    "de",
+    "vida",
+    "positividad",
+    "fashion"
+  ],
+  "author": "yauck juan manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmyauck/bruna_girl/issues"
+  },
+  "homepage": "https://github.com/jmyauck/bruna_girl#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

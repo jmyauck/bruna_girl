@@ -28,8 +28,7 @@ header {
     }
     nav {
         display: flex;
-        
-        align-self: end;
+        align-self: flex-end;
         margin-bottom: 17px;
         li {
             background-color: #d5bdaf;
@@ -42,6 +41,10 @@ header {
                 transition: height 0.4s;
                 background-color: #f5ebe0;
             }
+        }
+        @media screen and (max-width: 412px) {
+            display: flex;
+            align-self: start;
         }
     }
 }

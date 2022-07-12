@@ -10,6 +10,7 @@
 }
 .mainSection article {
   width: 100%;
+  height: 100%;
 }
 
 body {
@@ -85,7 +86,7 @@ header a:link {
 }
 header nav {
   display: flex;
-  align-self: end;
+  align-self: flex-end;
   margin-bottom: 17px;
 }
 header nav li {
@@ -99,6 +100,12 @@ header nav li:hover {
   height: 35px;
   transition: height 0.4s;
   background-color: #f5ebe0;
+}
+@media screen and (max-width: 412px) {
+  header nav {
+    display: flex;
+    align-self: start;
+  }
 }
 
 .btnStyle {
@@ -129,18 +136,18 @@ header nav li:hover {
   box-shadow: none;
 }
 
-section div {
+.divGaleria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100vw;
 }
-section div img {
+.divGaleria .imgGaleria {
   width: 21.8rem;
   transition: 0.7s;
   margin-top: 3.25rem;
 }
-section div img:hover {
+.divGaleria .imgGaleria:hover {
   transform: translate(0px, -30px);
 }
 
@@ -197,6 +204,14 @@ a:active {
   margin-top: 50px;
   margin-left: 43%;
 }
+@media screen and (max-width: 412px) {
+  .darlingTitle {
+    margin-left: 2.5rem;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 
 .parrafoIndex {
   text-align: center;
@@ -206,9 +221,54 @@ a:active {
   width: 700px;
   margin-left: 600px;
 }
+@media screen and (max-width: 412px) {
+  .parrafoIndex {
+    max-width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .estiloFuentes {
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.fondoNosotros {
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 830px;
+  background-position-y: 80%;
+}
+
+#commentFont {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.comentsBg {
+  background-image: url("../imagenes/coments2.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position-y: 75%;
+}
+
+.textArea {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #d5bdaf;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.textArea:focus {
+  background-color: #f5ebe0;
+  box-shadow: none;
+  border-color: #d6ccc2;
 }/*# sourceMappingURL=estilos.css.map */
