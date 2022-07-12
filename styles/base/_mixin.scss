@@ -1,3 +1,4 @@
+//mixin de titulos //
 @mixin titulos {
     font-family: $parrafos;
     letter-spacing: 3px;
@@ -10,11 +11,13 @@
         grid-template-columns: 1fr;
     }
 }
+//mixin para las fuentes//
 @mixin fuentes {
     font-family: $general;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+//mixin para los parrafos//
 @mixin parrafos {
     text-align:center;
     font-family: $general;

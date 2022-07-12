@@ -1,0 +1,27 @@
+//extend de parrafo NOSOTROS//
+.parrafoNosotros {
+    @extend .parrafoIndex;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    color: $cremitaOscuro;
+    text-shadow: #000000 2px 2px;
+}
+//extend de título NOSOTROS//
+.nosotrosTitle {
+    @extend .darlingTitle;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    color: $cremitaOscuro;
+    text-shadow: #000000 2px 2px;
+    width: 9%;
+    @media screen and (max-width: 412px) {
+        width: 35%;
+    }
+}
+//extend de boton FINALIZAR COMPRA//
+.btnCarrito {
+    @extend .btnStyle;
+    margin-top: 2rem;
+    margin-left: 20%;
+    @media screen and (max-width: 412px) {
+        margin-left: 0%;
+    }
+}

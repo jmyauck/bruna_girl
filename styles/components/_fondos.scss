@@ -1,33 +1,58 @@
+//fondo seccion nosotros//
 .fondoNosotros {
     background-image: url("../imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 830px;
     background-position-y: 80%;
+    @media screen and (max-width: 412px) {
+        background-position-y: 43%;
+    }
 }
 //area de comentarios//
 #commentFont {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $general;
 }
+//fondo de area de comentarios//
 .comentsBg {
     background-image: url("../imagenes/coments2.jpg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 600px;
-    background-position-y: 75%
+    background-position-y: 75%;
+    @media screen and (max-width: 412px) {
+        background-position-y: 43%;
+    }
 }
+//input area de texto//
 .textArea {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #d5bdaf;
+    font-family: $general;
+    background-color: $cremitaOscuro;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 10px;
 }
+//seleccionado de area de texto//
 .textArea:focus {
-    background-color: #f5ebe0;
+    background-color: $cremitaClaro;
     box-shadow: none;
-    border-color: #d6ccc2;
-
+    border-color: $marroncito;
+}
+//fondo seccion carrito//
+.sectionCarrito {
+    max-width: 100vw;
+    width: 40rem;
+    height: 30rem;  
+    background-color: #d5bdaf;
+    margin-left: 20%;
+    margin-top: 3rem;
+}
+.sectionCarrito h1 {
+    max-width: 100vw;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.3rem;
+    margin-left: 1.4rem;
 }

@@ -13,23 +13,31 @@
   height: 100%;
 }
 
-body {
-  background-color: #f5ebe0;
-  max-width: 100%;
+.parrafoNosotros {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #d5bdaf;
+  text-shadow: #000000 2px 2px;
 }
-body h2 {
-  font-family: "Cormorant Garamond", serif;
-}
-body div {
-  display: grid;
-  grid-template-rows: 300px auto 120px;
-  max-width: 100%;
+
+.nosotrosTitle {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #d5bdaf;
+  text-shadow: #000000 2px 2px;
+  width: 9%;
 }
 @media screen and (max-width: 412px) {
-  body div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  .nosotrosTitle {
+    width: 35%;
+  }
+}
+
+.btnCarrito {
+  margin-top: 2rem;
+  margin-left: 20%;
+}
+@media screen and (max-width: 412px) {
+  .btnCarrito {
+    margin-left: 0%;
   }
 }
 
@@ -108,7 +116,7 @@ header nav li:hover {
   }
 }
 
-.btnStyle {
+.btnStyle, .btnCarrito {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -124,12 +132,12 @@ header nav li:hover {
   letter-spacing: 2px;
   color: #000000;
 }
-.btnStyle:hover {
+.btnStyle:hover, .btnCarrito:hover {
   background-color: #f5ebe0;
   color: #000000;
   border-color: #d6ccc2;
 }
-.btnStyle:focus {
+.btnStyle:focus, .btnCarrito:focus {
   background-color: #f5ebe0;
   color: #000000;
   border-color: #d6ccc2;
@@ -198,14 +206,14 @@ a:active {
   }
 }
 
-.darlingTitle {
+.darlingTitle, .nosotrosTitle {
   font-family: "Vidaloka", serif;
   letter-spacing: 3px;
   margin-top: 50px;
   margin-left: 43%;
 }
 @media screen and (max-width: 412px) {
-  .darlingTitle {
+  .darlingTitle, .nosotrosTitle {
     margin-left: 2.5rem;
     padding: 0%;
     display: grid;
@@ -213,7 +221,7 @@ a:active {
   }
 }
 
-.parrafoIndex {
+.parrafoIndex, .parrafoNosotros {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   background-size: contain;
@@ -222,7 +230,7 @@ a:active {
   margin-left: 600px;
 }
 @media screen and (max-width: 412px) {
-  .parrafoIndex {
+  .parrafoIndex, .parrafoNosotros {
     max-width: 100vw;
     margin: 0%;
     padding: 0%;
@@ -244,6 +252,11 @@ a:active {
   background-size: 830px;
   background-position-y: 80%;
 }
+@media screen and (max-width: 412px) {
+  .fondoNosotros {
+    background-position-y: 43%;
+  }
+}
 
 #commentFont {
   text-transform: uppercase;
@@ -258,6 +271,11 @@ a:active {
   background-size: 600px;
   background-position-y: 75%;
 }
+@media screen and (max-width: 412px) {
+  .comentsBg {
+    background-position-y: 43%;
+  }
+}
 
 .textArea {
   font-family: "Cormorant Garamond", serif;
@@ -271,4 +289,49 @@ a:active {
   background-color: #f5ebe0;
   box-shadow: none;
   border-color: #d6ccc2;
+}
+
+.sectionCarrito {
+  max-width: 100vw;
+  width: 40rem;
+  height: 30rem;
+  background-color: #d5bdaf;
+  margin-left: 20%;
+  margin-top: 3rem;
+}
+
+.sectionCarrito h1 {
+  max-width: 100vw;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.3rem;
+  margin-left: 1.4rem;
+}
+
+.sectionCarrito {
+  max-width: 100vw;
+  width: 40rem;
+  height: 30rem;
+  background-color: #d5bdaf;
+  margin-left: 20%;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 412px) {
+  .sectionCarrito {
+    margin-left: 0%;
+  }
+}
+
+.sectionCarrito h1 {
+  max-width: 100vw;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.3rem;
+  margin-left: 1.4rem;
+}
+
+.imgCompra {
+  width: 10rem;
+  margin-left: 5%;
+  margin-top: 5%;
 }/*# sourceMappingURL=estilos.css.map */

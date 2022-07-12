@@ -1,7 +1,8 @@
+//header y navbar //
 header {
     display: flex;
-    background-color: #d5bdaf;
-    font-family: 'Cormorant Garamond', serif;
+    background-color: $cremitaOscuro;
+    font-family: $general;
     text-transform: uppercase;
     letter-spacing: 5px;
     @media screen and (max-width: 412px) {
@@ -31,7 +32,7 @@ header {
         align-self: flex-end;
         margin-bottom: 17px;
         li {
-            background-color: #d5bdaf;
+            background-color: $cremitaOscuro;
             letter-spacing: 3px;
             transition: 0.7s;
             &:hover {
@@ -39,7 +40,7 @@ header {
                 align-items: center;
                 height: 35px;
                 transition: height 0.4s;
-                background-color: #f5ebe0;
+                background-color: $cremitaClaro;
             }
         }
         @media screen and (max-width: 412px) {

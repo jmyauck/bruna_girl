@@ -2,7 +2,7 @@
 @import "./base/variables";
 @import "./base/mixin";
 @import "./base/maquetados";
-@import "./layout/body";
+@import "./base/extends";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./components/btnstyle";
@@ -11,3 +11,4 @@
 @import "./components/redesfixed";
 @import "./components/textos";
 @import "./components/fondos";
+@import "./components/carrito";

@@ -1,0 +1,26 @@
+//fondo de seccion carrito//
+.sectionCarrito {
+    max-width: 100vw;
+    width: 40rem;
+    height: 30rem;  
+    background-color: #d5bdaf;
+    margin-left: 20%;
+    margin-top: 3rem;
+    @media screen and (max-width: 412px){
+        margin-left: 0%;
+    }
+}
+//leyenda CONTENIDO DE CARRITO//
+.sectionCarrito h1 {
+    max-width: 100vw;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.3rem;
+    margin-left: 1.4rem;
+}
+//contenido del carrito//
+.imgCompra {
+    width: 10rem;
+    margin-left: 5%;
+    margin-top: 5%;
+}
