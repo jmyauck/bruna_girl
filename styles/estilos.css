@@ -14,49 +14,48 @@
 }
 
 .parrafoNosotros {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #d5bdaf;
-  text-shadow: #000000 2px 2px;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: none;
+  margin-left: 600px;
+  text-align: center;
+  background-size: contain;
+  font-size: 20px;
+  width: 700px;
 }
 
 .nosotrosTitle {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #d5bdaf;
-  text-shadow: #000000 2px 2px;
-  width: 9%;
-}
-@media screen and (max-width: 412px) {
-  .nosotrosTitle {
-    width: 35%;
-  }
+  font-family: "Vidaloka", serif;
+  letter-spacing: 3px;
+  margin-left: 43%;
+  margin-top: 50px;
 }
 
-.btnCarrito {
-  margin-top: 2rem;
-  margin-left: 20%;
-}
-@media screen and (max-width: 412px) {
-  .btnCarrito {
-    margin-left: 0%;
-  }
-}
-
-footer {
-  font-family: "Cormorant Garamond", serif;
+.btnComentario, .btnCarrito {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 17px;
+  padding: 10px;
+  border: solid 2px;
+  border-color: #d6ccc2;
+  font-size: 12px;
+  background-color: #d5bdaf;
+  letter-spacing: 3px;
+  transition: 0.7s;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #000000;
 }
-footer ul {
-  display: flex;
-  list-style-type: none;
-  flex-direction: row;
-  justify-content: space-evenly;
+.btnComentario:hover, .btnCarrito:hover {
+  background-color: #f5ebe0;
+  color: #000000;
+  border-color: #d6ccc2;
 }
-@media screen and (max-width: 412px) {
-  footer ul {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.btnComentario:focus, .btnCarrito:focus {
+  background-color: #f5ebe0;
+  color: #000000;
+  border-color: #d6ccc2;
+  box-shadow: none;
 }
 
 header {
@@ -116,7 +115,27 @@ header nav li:hover {
   }
 }
 
-.btnStyle, .btnCarrito {
+footer {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 7rem;
+  background-color: #d5bdaf;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 412px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.btnStyle {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -132,16 +151,30 @@ header nav li:hover {
   letter-spacing: 2px;
   color: #000000;
 }
-.btnStyle:hover, .btnCarrito:hover {
+.btnStyle:hover {
   background-color: #f5ebe0;
   color: #000000;
   border-color: #d6ccc2;
 }
-.btnStyle:focus, .btnCarrito:focus {
+.btnStyle:focus {
   background-color: #f5ebe0;
   color: #000000;
   border-color: #d6ccc2;
   box-shadow: none;
+}
+
+.btnCarrito {
+  margin-top: 2rem;
+  margin-left: 20%;
+}
+@media screen and (max-width: 412px) {
+  .btnCarrito {
+    margin-left: 0%;
+  }
+}
+
+.btnComentario {
+  margin-bottom: 500px;
 }
 
 .divGaleria {
@@ -206,14 +239,14 @@ a:active {
   }
 }
 
-.darlingTitle, .nosotrosTitle {
+.darlingTitle {
   font-family: "Vidaloka", serif;
   letter-spacing: 3px;
-  margin-top: 50px;
   margin-left: 43%;
+  margin-top: 50px;
 }
 @media screen and (max-width: 412px) {
-  .darlingTitle, .nosotrosTitle {
+  .darlingTitle {
     margin-left: 2.5rem;
     padding: 0%;
     display: grid;
@@ -221,16 +254,17 @@ a:active {
   }
 }
 
-.parrafoIndex, .parrafoNosotros {
-  text-align: center;
+.parrafoIndex {
   font-family: "Cormorant Garamond", serif;
+  letter-spacing: none;
+  margin-left: 600px;
+  text-align: center;
   background-size: contain;
   font-size: 20px;
   width: 700px;
-  margin-left: 600px;
 }
 @media screen and (max-width: 412px) {
-  .parrafoIndex, .parrafoNosotros {
+  .parrafoIndex {
     max-width: 100vw;
     margin: 0%;
     padding: 0%;
@@ -241,15 +275,40 @@ a:active {
 
 .estiloFuentes {
   font-family: "Cormorant Garamond", serif;
+  letter-spacing: 2px;
+  margin-left: none;
+  font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.parrafoNosotros {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #d5bdaf;
+  text-shadow: #000000 2px 2px;
+  margin-bottom: 18.75rem;
+  margin-top: 3.12rem;
+  margin-right: 1000px;
+  max-width: auto;
+}
+
+.nosotrosTitle {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #d5bdaf;
+  text-shadow: #000000 2px 2px;
+  width: 9%;
+}
+@media screen and (max-width: 412px) {
+  .nosotrosTitle {
+    width: 35%;
+  }
 }
 
 .fondoNosotros {
   background-image: url("../imagenes/fondo.jpg");
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 830px;
+  background-position: 49.9%;
+  background-size: 43.75rem;
   background-position-y: 80%;
 }
 @media screen and (max-width: 412px) {
@@ -268,7 +327,7 @@ a:active {
   background-image: url("../imagenes/coments2.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 600px;
+  background-size: 37.5rem;
   background-position-y: 75%;
 }
 @media screen and (max-width: 412px) {

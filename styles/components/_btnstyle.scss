@@ -26,3 +26,17 @@
         box-shadow: none;
     }
 }
+//boton de finalizar compra//
+.btnCarrito {
+    @extend %btnstyle;
+    margin-top: 2rem;
+    margin-left: 20%;
+    @media screen and (max-width: 412px) {
+        margin-left: 0%;
+    }
+}
+//botones de caja de comentarios//
+.btnComentario {
+    @extend %btnstyle;
+    margin-bottom: 500px;
+}
