@@ -141,6 +141,8 @@ footer ul {
   flex-wrap: nowrap;
   height: 17px;
   padding: 10px;
+  margin-top: 3.12rem;
+  margin-bottom: 4.7rem;
   border: solid 2px;
   border-color: #d6ccc2;
   font-size: 12px;
@@ -174,6 +176,7 @@ footer ul {
 }
 
 .btnComentario {
+  margin-top: 2.5rem;
   margin-bottom: 500px;
 }
 
@@ -291,6 +294,12 @@ a:active {
   margin-right: 1000px;
   max-width: auto;
 }
+@media screen and (max-width: 412px) {
+  .parrafoNosotros {
+    margin-left: 0px;
+    width: 100vw;
+  }
+}
 
 .nosotrosTitle {
   background-color: rgba(0, 0, 0, 0.4);
@@ -342,6 +351,7 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 10px;
+  margin-top: 2.5rem;
 }
 
 .textArea:focus {
